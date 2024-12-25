@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Terrain Classification System</title>
+  </head>
+  <style type="text/css">
+    body {
+      background-image: url(back.png);
+      background-repeat: no-repeat;
+      background-size: 50%;
+      background-position-x: center;
+    }
+    th,
+    td {
+      /* border: 1px solid black; */
+      /* width: 100px; */
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+    .center {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .center_div {
+      margin: auto;
+      width: 60%;
+      /* border: 3px solid #73ad21; */
+      padding: 10px0;
+    }
+    .main_div {
+      margin: auto;
+      width: 90%;
+      border: 3px solid #73ad21;
+      padding: 10px;
+      border-radius: 15px;
+    }
+    div {
+      background-color: hsl(158, 12%, 83%);
+      background-image: url(back.png);
+      opacity: 10;
+    }
+    h1 {
+      text-align: center;
+      font-size: 50px;
+    }
+  </style>
+  <body>
+    <!-- partial:index.partial.html -->
+    <div class="main_div">
+      <form action="/success" method="post" enctype="multipart/form-data">
+        <h1>Terrain Classification System</h1>
+        <div class="center_div">
+          <div class="center_div">
+            <input type="file" name="file" />
+            <input type="submit" value="Upload" />
+          </div>
+        </div>
+        <table class="center">
+          <tr>
+            <td>Label</td>
+            <td>Input Image</td>
+            <td>Output Image</td>
+          </tr>
+          <tr>
+            <td><img src="static/images/i1.png" width="256" height="256" /></td>
+            <td><img src="{{input_img}}" width="384" height="384" /></td>
+            <td><img src="{{a_del}}" width="384" height="384" /></td>
+          </tr>
+        </table>
+      </form>
+    </div>
+  </body>
+</html>
