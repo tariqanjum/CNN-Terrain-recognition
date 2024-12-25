@@ -1,1 +1,2 @@
 # CNN-Terrain-recognition
+The CNN Terrain Recognition project focuses on using Convolutional Neural Networks (CNNs) to classify and identify different types of terrains from images or sensor data. Terrain recognition is a crucial component in various applications, including autonomous vehicles, robotics, environmental monitoring, and outdoor navigation systems. The project aims to develop a robust model capable of distinguishing between terrain types such as grass, sand, snow, water, rocky surfaces, and urban landscapes.
